@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.05.03"/>
+    <PROJECT value="GPSView.exe"/>
+    <OBJFILES value="outGR\GPSView.obj outGR\gv_Main.obj outGR\utils.obj outGR\f_Config.obj
+      outGR\f_DataList.obj outGR\f_CfgCols.obj outGR\f_DataGraph.obj outGR\f_DataPath.obj  outGR\pNMEA.obj
+      outGR\gdi_ext.obj outGR\ColorPickerButton.obj outGR\TBtnTB97.obj outGR\AddOnTB97.obj outGR\TB97.obj outGR\TB97Cmn.obj
+      outGR\TB97Cnst.obj outGR\TB97Ctls.obj outGR\zoomler.obj
+      outGR\TB97MaskEdit.obj outGR\TB97Tlbr.obj outGR\TB97TlbrEd.obj outGR\TB97Tlwn.obj outGR\TB97Vers.obj
+      outGR\gdi_ext.obj outGR\xpmenu.obj"/>
+    <RESFILES value="GPSView.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) gv_Main.dfm f_Config.dfm f_DataList.dfm f_CfgCols.dfm
+      f_DataGraph.dfm f_DataPath.dfm"/>
+    <LIBFILES value="..\LIBS\GeoTransLib.lib std_s.lib win_s.lib comps_s.lib"/>
+    <LIBRARIES value="Vcl50.lib"/>
+    <SPARELIBS value="Vcl50.lib"/>
+    <PACKAGES value=""/>
+    <PATHCPP value=".;..\LIBS\GPS"/>
+    <PATHPAS value=".;..\LIBS\PASComp;$(BCB)\Ocx\Other"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="__NOPKG__=1;USE_NMEA_GEOTRANS=1"/>
+    <SYSDEFINES value="NO_STRICT;"/>
+    <MAINSOURCE value="GPSView.cpp"/>
+    <INCLUDEPATH value="outGR;..\LIBS\GPS;..\libs\PASComp;..\libs\Std;..\libs\Win;..\libs\Comps;..\libs;$(BCB)\ocx\obj;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="outGR;..\LIBS\GPS;..\libs\std\out_S;..\libs\win\out_S;..\libs\Comps\out_S;..\LIBS\Win;..\libs\Comps;$(BCB)\Ocx\Other;..\libs;$(BCB)\ocx\obj;$(BCB)\Projects\Lib;$(BCB)\Imports;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I$(BCB)\include -I$(BCB)\include\vcl -src_suffix cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=outGR\csm.csm -Hc -Vx -Ve -C -fp -ff -X- -r- -a8 -6 -b- -d -k -y- -v-
+      -vi -tW -tWM -c"/>
+    <PFLAGS value="-N2outGR -N0outGR -$Y- -$L- -$D- -N1out -v -JPHN -LUvcl50 -LUDcldb50
+      -LUDclbde50 -LUDclstd50 -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/ml /w2 /zi"/>
+    <LFLAGS value="-IoutGR -D&quot;&quot; -aa -Tpe -m -M -C -B:0x400000"/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+  </LINKER>
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1049
+CodePage=1251
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=10
+Item0=..\tmp;..\Geotrans;..\libs\Repository;..\libs\PASComp;..\libs\Std;..\libs\Win;..\libs\Comps;..\libs;$(BCB)\ocx\obj;$(BCB)\include;$(BCB)\include\vcl
+Item1=..\Geotrans;..\libs\Repository;..\libs\PASComp;..\libs\Std;..\libs\Win;..\libs\Comps;..\libs;$(BCB)\ocx\obj;$(BCB)\include;$(BCB)\include\vcl
+Item2=;..\tmp;..\Geotrans;..\libs\Repository;..\libs\PASComp;..\libs\Std;..\libs\Win;..\libs\Comps;..\libs;$(BCB)\ocx\obj;$(BCB)\include;$(BCB)\include\vcl
+Item3=;;;;..\tmp;..\Geotrans;..\libs\Repository;..\libs\PASComp;..\libs\Std;..\libs\Win;..\libs\Comps;..\libs;$(BCB)\ocx\obj;$(BCB)\include;$(BCB)\include\vcl
+Item4=Jeeps;..\Geotrans;..\libs\Repository;..\libs\PASComp;..\libs\Std;..\libs\Win;..\libs\Comps;..\libs;$(BCB)\ocx\obj;$(BCB)\include;$(BCB)\include\vcl
+Item5=..\tmp;Jeeps;..\libs\Repository;..\libs\PASComp;..\libs\Std;..\libs\Win;..\libs\Comps;..\libs;$(BCB)\ocx\obj;$(BCB)\include;$(BCB)\include\vcl
+Item6=..\libs\Repository;..\libs\PASComp;..\libs\Std;..\libs\Win;..\libs\Comps;..\libs;$(BCB)\ocx\obj;$(BCB)\include;$(BCB)\include\vcl
+Item7=..\libs\Repository;..\libs\PASComp;..\libs\Std;..\libs\Win;..\libs\Comps;..\libs;$(BCB)\ocx\other;$(BCB)\ocx\rx;$(BCB)\ocx\SynEdit;$(BCB)\include;$(BCB)\include\vcl
+Item8=$(BCB)\..\mywin\libs\Repository;$(BCB)\..\mywin\libs\PASComp;$(BCB)\..\mywin\libs;$(BCB)\ocx\other;$(BCB)\ocx\rx;$(BCB)\include;$(BCB)\include\vcl
+Item9=$(BCB)\..\mywin\libs\Repository;$(BCB)\..\mywin\libs\PASComp;$(BCB)\..\mywin\libs;$(BCB)\ocx\other;$(BCB)\ocx\rx;$(BCB)\Ocx\kbmmem;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=13
+Item0=..\tmp;..\libs;$(BCB)\ocx\obj;$(BCB)\Projects\Lib;$(BCB)\Imports;$(BCB)\lib\obj;$(BCB)\lib;..\libs\Win;..\libs\Comps;$(BCB)\ocx\other
+Item1=..\libs;$(BCB)\ocx\obj;$(BCB)\Projects\Lib;$(BCB)\Imports;$(BCB)\lib\obj;$(BCB)\lib;..\libs\Win;..\libs\Comps;$(BCB)\ocx\other
+Item2=;..\tmp;..\libs;$(BCB)\ocx\obj;$(BCB)\Projects\Lib;$(BCB)\Imports;$(BCB)\lib\obj;$(BCB)\lib;..\libs\Win;..\libs\Comps;$(BCB)\ocx\other
+Item3=..\libs;$(BCB)\ocx\obj;$(BCB)\Projects\Lib;$(BCB)\Imports;$(BCB)\lib\obj;$(BCB)\lib;..\libs\Win;..\libs\Comps
+Item4=..\tmp;..\libs;$(BCB)\ocx\obj;$(BCB)\Projects\Lib;$(BCB)\Imports;$(BCB)\lib\obj;$(BCB)\lib
+Item5=;;;;..\tmp;..\libs;$(BCB)\ocx\obj;$(BCB)\Projects\Lib;$(BCB)\Imports;$(BCB)\lib\obj;$(BCB)\lib
+Item6=..\libs;$(BCB)\ocx\obj;$(BCB)\Projects\Lib;$(BCB)\Imports;$(BCB)\lib\obj;$(BCB)\lib
+Item7=Jeeps;..\libs;$(BCB)\ocx\obj;$(BCB)\Projects\Lib;$(BCB)\Imports;$(BCB)\lib\obj;$(BCB)\lib
+Item8=..\tmp;Jeeps;..\LIBS\Std;..\libs;$(BCB)\ocx\obj;$(BCB)\Projects\Lib;$(BCB)\Imports;$(BCB)\lib\obj;$(BCB)\lib
+Item9=..\LIBS\Std;..\libs;$(BCB)\ocx\obj;$(BCB)\Projects\Lib;$(BCB)\Imports;$(BCB)\lib\obj;$(BCB)\lib
+Item10=..\libs\Repository;..\libs\PASComp;..\libs\Std;..\libs\Win;..\libs\Comps;..\libs;$(BCB)\ocx\rx;$(BCB)\ocx\other;$(BCB)\ocx\SynEdit;$(BCB)\Projects\Lib;$(BCB)\Imports;$(BCB)\lib\obj;$(BCB)\lib
+Item11=$(BCB)\..\mywin\libs;$(BCB)\..\mywin\libs\win;$(BCB)\ocx\rx;$(BCB)\ocx\other;$(BCB)\Projects\Lib;$(BCB)\Imports;$(BCB)\lib\obj;$(BCB)\lib
+Item12=$(BCB)\..\mywin\libs;$(BCB)\..\mywin\libs\win;$(BCB)\ocx\rx;$(BCB)\ocx\other;$(BCB)\Ocx\kbmmem;$(BCB)\Projects\Lib;$(BCB)\Imports;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=3
+Item0=$(BCB)\source\vcl
+Item1=$(BCB)\ocx\other;$(BCB)\ocx\rx;$(BCB)\..\mywin\libs\Repository;$(BCB)\..\mywin\libs\Std;$(BCB)\..\mywin\libs\Win;$(BCB)\..\mywin\libs\Comps;$(BCB)\..\mywin\LIBS\Transp;$(BCB)\..\mywin\libs\PASComp;$(BCB)\source\vcl
+Item2=$(BCB)\ocx\other;$(BCB)\ocx\rx;$(BCB)\Ocx\kbmmem;$(BCB)\..\mywin\libs\Repository;$(BCB)\..\mywin\libs\Std;$(BCB)\..\mywin\libs\Win;$(BCB)\..\mywin\libs\Comps;$(BCB)\..\mywin\LIBS\Transp;$(BCB)\..\mywin\libs\PASComp;$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=3
+Item0=_DEBUG;
+Item1=_DEBUG;__NOPLOG__=1
+Item2=_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=3
+Item0=outGR
+Item1=..\tmp\out
+Item2=out
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+  </IDEOPTIONS>
+</PROJECT>
